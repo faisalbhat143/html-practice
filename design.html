@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> FAIM</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	  .background{
+			width: 100%;
+			background: linear-gradient(to too, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100%;
+		}
+		.navbar{
+			width: 1200px;
+			height: 75px;
+			margin: auto;
+		}
+		.icon{
+			width: 200px;
+			float: left;
+			height: 70px;
+		}
+		.logo{
+			color: orange;
+			font-size: 35px;
+			font-family: Arial;
+			padding: left;
+			padding-top: 10px;
+		}
+		.menu{
+			width: 400px;
+			float: left;
+			height: 70px;
+
+
+		}
+		ul{
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		ul li{
+			list-style: none;
+			margin-left: 62px;
+			margin-top: 27px;
+			font-size: 14px;
+		}
+		ul li a{
+			text-decoration: none;
+			color: white;
+			font-family: arial;
+			font-weight: bold;
+			transition: 0.4s ease-in-out;
+		}
+		ul li a:hover{
+			color: orange;
+		}
+		.search{
+			width: 330px;
+			float: left;
+			margin-left: 270px;
+		}
+		.srch{
+			position: absolute;
+			top: 120px;
+			left: 1000;
+			font-family: times new roman;
+			width: 220px;
+			height: 40px;
+			background: transparent;
+			border: 2px solid orange;
+			margin-top: 13px;
+			color: white;
+			perspective-origin: none;
+			font-size: 16px;
+			float: left;
+			padding: 10px;
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		.btn{
+			position: absolute;
+			top: 100px;
+			left: 1100px;
+			width: 100px;
+			height: 40px;
+			background: orange;
+			border: 2px solid orange;
+			margin-top:13px;
+			color: white;
+			font-size: 15px;
+			border-bottom-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+
+		}
+		.btn:focus{
+			outline: none;
+		}
+		.srch:focus{
+			outline: none;
+		}
+		.content{
+			width: 1200px;
+			height: auto;
+			margin: auto;
+			color: white;
+			position: relative;
+
+		}
+		.content .par{
+			padding-left: 20px;
+			padding-bottom: 25px;
+			font-family: Arial;
+			letter-spacing: 1.2px;
+			line-height: 30px;
+		}
+		.content h1{
+			font-family: times new roman;
+			font-size: 50px;
+			padding-left: 20px;
+			margin-top: 9px;
+			letter-spacing: 2px;
+		}
+		.content .contact{
+			width: 160px;
+			height: 40px;
+			background: orange;
+			border: none;
+			margin-bottom: 10px;
+			margin-left: 20px;
+			font-size: 18px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: .4s;
+		}
+		.content .contact{
+			text-decoration: none;
+			color: black;
+			transition: .3s ease;
+
+		}
+		.contact:hover{
+			background-color: white;
+
+		}
+		.content span{
+			color: orange;
+			font-size: 60px;
+		}
+		.form{
+			width: 250px;
+			height: 600;
+			background: linear-gradient( to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+			position: absolute;
+			top: 400px;
+			left: 1100px;
+			border-radius: 10px;
+			padding: 25px;
+		}
+		.form h2{
+			width: 220px;
+			font-size: sans-serif;
+			text-align: center;
+			color: orange;
+			font-size: 22px;
+			background-color: white;
+			border-radius: 10px;
+			margin: 2px;
+			padding: 8px;
+		}
+		.form input{
+			width: 240px;
+			height: 35px;
+			background: transparent;
+			border-bottom: 1px solid orange;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			color: white;
+			font-size: 15px;
+			letter-spacing: 1px;
+			margin-top: 30px;
+			font-family: sans-serif;
+		}
+		.form input:focus{
+			outline: none;
+		}
+		::placeholder{
+			color: white;
+			font-family: Arial;
+		}
+		.btn{
+			width: 240px;
+			height: 40px;
+			background: orange;
+			border: none;
+			margin-top: 30px;
+			font-size: 18px;
+			border-radius: 10px;
+			cursor: pointer;
+			color: white;
+			transition: 0.4s;
+		}
+		.btn:hover{
+			background: white;
+			color: orange;
+		}
+		.btn{
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		.form .link{
+			font-family: arial,sans-serif,helvetica;
+			font-size: 17px;
+			color: white;
+			padding-top: 20px;
+			text-align: center;
+
+		}
+		.form .linl a{
+			text-decoration: none;
+			color: orange;
+		}
+		.liw{
+			padding-top: 15px;
+			padding-bottom: 10px;
+			text-align: center;
+			color: white;
+		}
+		table id contact{
+
+		}
+		.marquee{
+			 background-color: white;
+		}
+		
+
+	</style>
+</head>
+<body background="C:\Users\Bhat Faisal\Pictures\pexels-codioful-(formerly-gradienta)-7135037.jpg" width="100%" ></body>
+<body>
+	<div class="main"></div>
+		<div class="navbar"></div>
+			<div class="icon"></div>
+				<h2 class="logo">Faisal.faim</h2>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href=#home><u>|home|</u></a></li>
+					<li><a href="#about"><u>|about|</u></a></li>
+					<li><a href="#service"><u>|service|</u></a></li>
+					<li><a href="#design"><u>|design|</u></a></li>
+					<li><a href="#contact"><u>|contact|</u></a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input class="srch" type="search" name="" placeholder="type of text">
+				<a href="#"><button class="btn">search</button></a></div>
+				<br><br><br><br><br><br><br><br>
+				<div class="content">
+					<h1>web design &</h1>
+					<h1><span>development</span> </h1>
+						<h1>course</h1>
+					<p class="par"> Faisal Ahmad Bhat, A Web developer 
+                                and this is first my first websitei love this profession and to become<br> 
+                                a full stack web developer and i belong to that profession which is 
+                                basically too different from this, <br>actually i am a medical student.
+                                I do my work mainly in hospitals, at different levels.but i am least<br>
+                                intrested towards that, so i choose this proffession and to learm more
+                                things about web development.</p>
+                                <button class="contact"><a href="#">join us</a></button>
+                            </div>
+                            <div class="form">
+                            	<h2>login here</h2>
+                            	<input type="email" name="email" placeholder="enter email here">
+                            	<input type="password" name="" placeholder="enter password here">
+                            	<button class="btn"><a href="#">login</a></button>
+
+                            	<p class="link">don't have account<br>
+                            	<a href="#">sign up</a> here</p>
+                            	<p class="liw">log in with</p>
+                            </div>
+                            <div class="icon">
+                            	<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            	<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            	<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            	<a href="#"><ion-icon name="logo-google"></ion-icon></a></div>
+                            	<script src="https://unpkg.com/ionicon@s.4.0/dist/ionicon.js"></script>
+                            	<!--Home(start)-->
+    <table id="home" border="1" width="100%"
+        cellpadding="20" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="Times New Roman"
+                                    size="6" color="#ffffff">
+                                    Hi faisal!
+                                </font>
+                            </h3>
+ 
+                            <h2>
+                                <font face="Verdana" size="6"
+                                    color="#4CAF50">
+                                    <!-- Freelance Programmer -->
+                                </font>
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Home(end)-->
+                            	 <!--About(start)-->
+    <table id="about" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="#4CAF50">
+                                About Me
+                            </font>
+                            <hr color="#4CAF50" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td width="40%">
+                            <img src="C:\Users\Bhat Faisal\Pictures\SmartSelect_20230512-114026_Gallery.png" width="100>
+                        </td>
+ 
+                        <td width="60>
+                            <font face="Verdana" size="4"
+                                color="white">
+                                Thanks for your interest, here
+                                is a quick story of me and this
+                                website.
+                                <hr color="black">
+                                Faisal Ahmad Bhat, A Web developer 
+                                and this is first my first website
+                                i love this profession and to become 
+                                a full stack web developer and i 
+                                belong to that profession which is 
+                                basically too different from this,
+                                actually i am a medical student.
+                                <hr color="black">
+ 
+                                I do my work mainly in hospitals,
+                                at different levels.but i am least
+                                intrested towards that, so i choose
+                                this proffession and to learm more
+                                things about web development, not
+                                only this i also want learn differnt
+                                programming languages like c, c++, 
+                                java, python and so on.
+                                <hr color="black">
+ 
+                                This website is basically one of my
+                                Web Development project which is
+                                built using HTML only.
+                                In this website i want to provide
+                                students, videos on different 
+                                languages, study material which
+                                i collected from differnet websites
+                                and videos from youtube.
+                                Thanks again for reading this,
+                                because of people like you, it
+                                exists and prospers!
+                                <hr color="black">
+                                Cheers,
+                                <br>
+                                <b>Faisal Ahmad Bhat.</b>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+                <hr color="black">
+                <hr color="black">
+                <hr color="black">
+            </td>
+        </tr>
+    </table>
+         <table id="service" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="violet">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="black">
+                                service
+                            </font>
+                            <hr color="black" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td height="10">
+                            <font face="Times New Roman"
+                                size="5" color="black">
+                                <ul>
+                                    <li>
+                                              <details>
+                                              	<summary>web development</summary>
+                                              		<p>
+                                              			web development is a course in which u can build websites<br>
+                                              			 it includes html, css and javasript
+                                              		</p>
+                                              	
+                                              </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                        <details>
+us                                       <summary>c programming</summary>
+                                       	<p>
+                                       		it is prcedural language which helps user to communicate with the computer.
+                                       	</p>
+                                       </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                        <details>
+us                                       	<summary>c++ programming</summary>
+                                       	<p>
+                                       		it is object oriented  language which helps user to communicate with the computer.
+                                       	</p>
+                                       </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                          <details>
+us                                       	<summary>python</summary>
+                                       	<p>
+                                       		it is also a programming language, u can use it in a website and by this you can learn<br>
+                                       		machine learning, artificial intelligence. python is  an easy language to learn and to <br>
+                                       		understand.
+                                       	</p>
+                                       </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                         <details>
+us                                       	<summary> java </summary>
+                                       	<p>
+                                       		it is object oriented language in which we divide fumctions in objects and classes.
+                                       	</p>
+                                       </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                         <details>
+us                                       	<summary>Algorithms</summary>
+                                       
+                                       </details>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#c2c0c3">
+                                          <details>
+us                                       	<summary>database</summary>
+                                       	<                                       </details>
+                                    </li>
+
+ 
+                                    
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   <!--<table id="contact" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="black">
+                                Contact
+                            </font>
+                            <hr color="black" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="50%" cellpadding="15"
+                                cellspacing="0" align="center" bgcolor="black">
+                                <tr>
+                                    <td width="30%">
+                                        <hr color="black">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            Name
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            <input type="text" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            Email
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            <input type="email" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            Number
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            <input type="number" size="12">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            Message
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#ffffff">
+                                            <textarea rows="5"
+                                                cols="37">
+                                            </textarea>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                          
+                                    </td>
+                                    <td width="70%">
+                                        <button type="Submit">
+                                            <font face="Verdana"
+                                                size="4" color="black">
+                                                <b>Submit</b>
+                                            </font>
+                                        </button>
+                                        <hr color="black">
+                                        <hr color="black">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+ 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                              
+                              
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table> -->
+    <!--Contact(end)-->
+ <marquee>welcome to my website</marquee>
+ 
+    <!--Footer1(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="13%" valign="top">
+                            <b>LinkedIn</b>
+                            <a href="#" target="_blank" style="text-decoration:none">
+                                ➲
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <b>Twitter</b>
+                            <a href="#" target="_blank" style="text-decoration:none">
+                                ➲
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <b>Instagram</b>
+                            <a href="http://www.instagram.com/faisal__x.0" target="_blank" style="text-decoration:none">
+                                ➲
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <b>Email</b>
+                            <a href="fasialbhat0770@gmail.com" target="_blank" style="text-decoration:none">
+                                ➲
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer1(end)-->
+ 
+ 
+    <!--Footer2(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana"
+                                color="#4CAF50" size="5">
+                                thank you
+                            
+                            </font>
+                        </td>
+ 
+                        <td width="10%">
+                            <font face="arial" color="black" size="5">
+                                <a href="#header" style="text-decoration:none">
+                                    <font face="Verdana" color="#4CAF50" size="6">
+                                        <b>TOP ☝</b>
+                                    </font>
+                                </a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer2(end)-->
+ 
+</body>
+ 
+</html>
+
+
+
+
+
+
+	
